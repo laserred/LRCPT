@@ -7,7 +7,7 @@ Create a class that extends LRCPT (see example.php)
 
 Require your class
 
-    require_once(get_template_directory() . '/includes/example.php');
+    require_once(get_template_directory() . '/includes/example-cpt.php');
 
 Set a name, labels and args for the CPT in this class
 
