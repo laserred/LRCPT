@@ -3,7 +3,7 @@ Require the base class in your functions.php
 
     require_once(get_template_directory() . '/includes/lr-cpt.php');
 
-Create a class that extends LRCPT (see example.php)
+Create a class that extends LRCPT (see example-cpt.php)
 
 Require your class
 
