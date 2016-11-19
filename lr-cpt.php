@@ -15,8 +15,8 @@ class LRCPT {
 
 
   /**
-   * Sets default values, merges these with provided values then calls the functions to set up the CPT/Metaboxes.
-   */
+  * Sets default values, merges these with provided values then calls the functions to set up the CPT/Metaboxes.
+  */
   public function __construct() {
     //set defaults
     $this->setDefaultLabels();
@@ -30,16 +30,16 @@ class LRCPT {
 
 
     //call the methods
-		add_action('init', array($this, 'register'));
+    add_action('init', array($this, 'register'));
     add_filter( 'cmb_meta_boxes', array( $this, 'metaboxes' ) );
-	}
+  }
 
 
 
   /**
-   * Registers a new CPT
-   * @return result of register_post_type
-   */
+  * Registers a new CPT
+  * @return result of register_post_type
+  */
   public function register(){
     return register_post_type($this->name ,$this->args);
   }
@@ -47,14 +47,14 @@ class LRCPT {
 
 
   /**
-   * Adds provided metabox array to the global metabox array
-   * @param  Array  $metaboxes existing metaboxes.
-   * @return [type]            array including provided metaboxes.
-   */
+  * Adds provided metabox array to the global metabox array
+  * @param  Array  $metaboxes existing metaboxes.
+  * @return [type]            array including provided metaboxes.
+  */
   private function metaboxes(Array $metaboxes){
-		if(!empty($this->metaboxes)){
-			$metaboxes[] = $this->metaboxes;
-		}
+    if(!empty($this->metaboxes)){
+      $metaboxes[] = $this->metaboxes;
+    }
 
     return $metaboxes;
   }
@@ -63,8 +63,8 @@ class LRCPT {
 
 
   /**
-   * Sets default values on properties, just keeps these messy arrays from being at the top of the file.
-   */
+  * Sets default values on properties, just keeps these messy arrays from being at the top of the file.
+  */
   private function setDefaultLabels(){
 
     $this->_labels = array(
