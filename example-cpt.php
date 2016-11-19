@@ -2,7 +2,7 @@
 
 class ExampleCPT extends LRCPT{
 
-	public $name;
+  public $name;
   public $labels = array('name' => 'Blaa');
 
   public $args = array();
