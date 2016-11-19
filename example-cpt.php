@@ -9,9 +9,9 @@ class ExampleCPT extends LRCPT{
 
   public $metaboxes = array();
 
-	/**
-	 * Call the parent constuctor to do all the work.
-	 */
+  /**
+   * Call the parent constuctor to do all the work.
+   */
   public function __construct(){
     PARENT::__construct();
   }
