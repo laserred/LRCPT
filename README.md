@@ -1,13 +1,13 @@
 ## Setup
-Require the base class in your functions.php
+Use composer to install
 
-    require_once(get_template_directory() . '/includes/lr-cpt.php');
+    composer require laserred/lrcpt
 
 Create a class that extends LRCPT (see example-cpt.php)
 
 Require your class
 
-    require_once(get_template_directory() . '/includes/example-cpt.php');
+    require_once(get_template_directory() . 'example-cpt.php');
 
 Set a name, labels and args for the CPT in this class
 
