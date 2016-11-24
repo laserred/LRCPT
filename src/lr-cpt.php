@@ -1,6 +1,6 @@
 <?php
 
-namespace laserred\LRCPT;
+namespace laserred\lrcpt;
 
 class LRCPT {
 

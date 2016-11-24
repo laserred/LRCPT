@@ -1,8 +1,8 @@
 {
-    "name": "laserred/LRCPT",
+    "name": "laserred/lrcpt",
     "autoload": {
         "psr-0" : {
-            "laserred\\LRCPT" : "src"
+            "laserred\\lrcpt" : "src"
         }
     }
 }
