@@ -2,7 +2,7 @@
 
 namespace laserred\lrcpt;
 
-class LRCPT {
+class lrcpt {
 
   //public vars
   public $name;
