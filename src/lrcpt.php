@@ -53,7 +53,7 @@ class lrcpt {
   * @param  Array  $metaboxes existing metaboxes.
   * @return [type]            array including provided metaboxes.
   */
-  private function metaboxes(Array $metaboxes){
+  public function metaboxes(Array $metaboxes){
     if(!empty($this->metaboxes)){
       $metaboxes[] = $this->metaboxes;
     }
