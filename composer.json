@@ -8,10 +8,10 @@
         }
     ],
     "autoload": {
-       "files": [
-           "src/lrcpt.php"
-       ]
-   }
+          "files": [
+              "/src/lrcpt.php"
+          ]
+      }
    },
     "require": {}
 }
