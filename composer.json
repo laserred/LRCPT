@@ -2,7 +2,7 @@
     "name": "laserred/lrcpt",
     "autoload": {
         "classmap" : [
-            "src/lrcpt"
+            "src/"
         ]
     }
 }
