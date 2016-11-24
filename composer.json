@@ -1,6 +1,7 @@
 {
     "name": "laserred/lrcpt",
     "description": "Laser Red CPT base class",
+    "license": "MIT",
     "authors": [
         {
             "name": "Joe Archer",
