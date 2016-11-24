@@ -1,8 +1,17 @@
 {
     "name": "laserred/lrcpt",
+    "description": "Laser Red CPT base class",
+    "authors": [
+        {
+            "name": "Joe Archer",
+            "email": "joe@laserred.co"
+        }
+    ],
     "autoload": {
-        "classmap" : [
-            "src/"
-        ]
-    }
+       "files": [
+           "src/lrcpt.php"
+       ]
+   }
+   },
+    "require": {}
 }
