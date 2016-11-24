@@ -1,5 +1,7 @@
 <?php
 
+namespace laserred\LRCPT;
+
 class LRCPT {
 
   //public vars
