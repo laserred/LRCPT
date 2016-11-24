@@ -8,10 +8,10 @@
         }
     ],
     "autoload": {
-          "classmap": [
-              "/src/lrcpt.php"
-          ]
-      }
+       "psr-4": {
+           "laserred\\": "src"
+       }
+    },
    },
     "require": {}
 }
