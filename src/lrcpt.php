@@ -55,7 +55,10 @@ class lrcpt {
   */
   public function metaboxes(Array $metaboxes){
     if(!empty($this->metaboxes)){
-      $metaboxes[] = $this->metaboxes;
+      foreach($this->metaboxes as $box){
+        $metaboxes[] = $box;
+      }
+
     }
 
     return $metaboxes;
