@@ -23,6 +23,9 @@ class lrcpt {
     //set defaults
     $this->setDefaultLabels();
     $this->labels = array_merge($this->_labels, $this->labels);
+    $this->labels['name'] = ucfirst($this->labels['name']);
+    $this->labels['name_singular'] = ucfirst($this->labels['name_singular']);
+
     $this->setDefaultArgs();
     $this->args = array_merge($this->_args, $this->args);
 
@@ -55,9 +58,9 @@ class lrcpt {
   */
   public function metaboxes(Array $metaboxes){
     if(!empty($this->metaboxes)){
-      foreach($this->metaboxes as $box){
-        $metaboxes[] = $box;
-      }
+        foreach($this->metaboxes as $box){
+            $metaboxes[] = $box;
+        }
 
     }
 
