@@ -86,7 +86,7 @@ class lrcpt {
     $this->_args = array(
       'labels' 				=> $this->labels,
       'public' 				=> true,
-      'supports' 				=> array('title', 'editor', 'thumbnail'),
+      'supports' 				=> array('title', 'editor', 'thumbnail', 'revisions'),
       'hierarchical'        	=> true,
       'show_ui'            	=> true,
       'show_in_menu'       	=> true,
