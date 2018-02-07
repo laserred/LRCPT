@@ -1,6 +1,8 @@
 <?php
 
-class ExampleCPT extends LRCPT{
+use laserred\lrcpt;
+
+class ExampleCPT extends lrcpt{
 
     public $name;
     public $labels = array('name' => 'Blaa');
