@@ -8,13 +8,10 @@ class lrcpt {
   public $name;
   public $labels;
   public $args;
-  public $metaboxes;
 
   //vars for defaults
   private $_labels;
   private $_args;
-
-
 
   /**
   * Sets default values, merges these with provided values then calls the functions to set up the CPT/Metaboxes.
@@ -33,13 +30,9 @@ class lrcpt {
       $this->name = "CPT";
     }
 
-
     //call the methods
     add_action('init', array($this, 'register'));
-    add_filter( 'cmb_meta_boxes', array( $this, 'metaboxes' ) );
   }
-
-
 
   /**
   * Registers a new CPT
@@ -48,27 +41,6 @@ class lrcpt {
   public function register(){
     return register_post_type($this->name ,$this->args);
   }
-
-
-
-  /**
-  * Adds provided metabox array to the global metabox array
-  * @param  Array  $metaboxes existing metaboxes.
-  * @return [type]            array including provided metaboxes.
-  */
-  public function metaboxes(Array $metaboxes){
-    if(!empty($this->metaboxes)){
-        foreach($this->metaboxes as $box){
-            $metaboxes[] = $box;
-        }
-
-    }
-
-    return $metaboxes;
-  }
-
-
-
 
   /**
   * Sets default values on properties, just keeps these messy arrays from being at the top of the file.
